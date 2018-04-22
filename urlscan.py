@@ -18,7 +18,7 @@ def create_paragraph(json):
 	links = get['stats']['totalLinks']
 	verified_malicious = get['stats']['malicious']
 	ads = get['stats']['adBlocked']
-	print "This website contacted " + str(ip_count) + " IPs in " + str(countries) + " countries across " + str(domain_count) + " domains to perform " + str(transaction_count) + " HTTP transactions. Of those, " + str(secure_requests) + " were HTTPS. The page contains " + str(links) + " links, " + str(verified_malicious) + " of which are verified malicious and " + str(ads) + " were links to ads." + " The main IP is " + str(main_ip) + " located in " + str(location) + " and belongs to " + str(owner) + ". The main domain is " + str(main_domain) + ". "
+	print ("This website contacted " + str(ip_count) + " IPs in " + str(countries) + " countries across " + str(domain_count) + " domains to perform " + str(transaction_count) + " HTTP transactions. Of those, " + str(secure_requests) + " were HTTPS. The page contains " + str(links) + " links, " + str(verified_malicious) + " of which are verified malicious and " + str(ads) + " were links to ads." + " The main IP is " + str(main_ip) + " located in " + str(location) + " and belongs to " + str(owner) + ". The main domain is " + str(main_domain) + ". ")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--url",help="first try")
